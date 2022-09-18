@@ -15,33 +15,32 @@ import java.util.Date;
 //帖子
 @Data
 
-@Document(indexName = "discusspost",  shards = 6, replicas = 3)
+@Document(indexName = "discusspost")
 public class DiscussPost {
-    @Id
+    //    @Id
     private int id;
-    @Field(type = FieldType.Integer)
+    //    @Field(type = FieldType.Integer)
     private int userid;
     //互联网校招
-    @Field(type = FieldType.Text,analyzer = "ik_max_word" ,searchAnalyzer = "ik_smart" )
+//    @Field(type = FieldType.Text,analyzer = "ik_max_word" ,searchAnalyzer = "ik_smart" )
     private String title;
-    @Field(type = FieldType.Text,analyzer = "ik_max_word" ,searchAnalyzer = "ik_smart" )
+    //    @Field(type = FieldType.Text,analyzer = "ik_max_word" ,searchAnalyzer = "ik_smart" )
     private String content;
-    @Field(type = FieldType.Integer)
+    //    @Field(type = FieldType.Integer)
     private int type;//'0-普通; 1-置顶;',
-    @Field(type = FieldType.Integer)
+    //    @Field(type = FieldType.Integer)
     private int status; //'0-正常; 1-精华; 2-拉黑;',
-    @Field(type = FieldType.Date)
+    //    @Field(type = FieldType.Date)
     private Date createtime;//创建时间
     //帖子评论数量
-    @Field(type = FieldType.Integer)
-    private  int commentCount;
+//    @Field(type = FieldType.Integer)
+    private int commentCount;
     //帖子分数
-    @Field(type = FieldType.Double)
+//    @Field(type = FieldType.Double)
     private double score;
 
     public DiscussPost() {
     }
-
 
     public int getId() {
         return id;

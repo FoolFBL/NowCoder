@@ -23,9 +23,9 @@ import java.util.Map;
 
 @Service
 public class ElasticsearchService {
-
-    @Autowired
-    private DiscussPostRepository repository;
+//
+//    @Autowired
+//    private DiscussPostRepository repository;
     @Autowired
     private ElasticsearchRestTemplate template;
     //存帖子

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 
 /**
 // * @author shijiu
-// */
+ */
 @Repository
 @EnableElasticsearchRepositories
 //实体类 主键类型
